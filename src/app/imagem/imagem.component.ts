@@ -7,12 +7,12 @@ import { Component } from '@angular/core';
   styleUrl: './imagem.component.css'
 })
   export class ImagemComponent {
-    imagemFechada: string = '/biscoito-fechado.jpeg'; 
-    imagemAberta: string = '/biscoito-aberto.jpeg';
-    imagemAtual: string = this.imagemFechada;
+    biscoito: string = '/biscoito-fechado.jpeg'; 
+    biscoitoAberto: string = '/biscoito-aberto.jpeg';
+    imagemAtual: string = this.biscoito;
   
     alternarImagem() {
-      this.imagemAtual = this.imagemAtual === this.imagemFechada ? this.imagemAberta : this.imagemFechada;
+      this.imagemAtual = this.imagemAtual === this.biscoito ? this.biscoitoAberto: this.biscoito;
     }
 
 }
